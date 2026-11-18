@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img" aria-labelledby="t d" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif">
+<title id="t">Volume of video and music during a call</title>
+<desc id="d">Illustration with default settings. Without a call the volume is 0 dB. When a call starts, macOS alone holds video and music at minus 30 dB for the whole call. With Livella they stay at minus 12 dB and drop to minus 22 dB only while the other person or you are speaking; a clap or typing is ignored.</desc>
+<rect width="880" height="440" rx="14" fill="#1a1a19"/>
+<text x="28" y="38" fill="#f0efec" font-size="19" font-weight="600">Volume of video and music during a call</text>
+<text x="28" y="60" fill="#c3c2b7" font-size="13.5">Illustration with the default settings</text>
+<line x1="560" y1="33" x2="586" y2="33" stroke="#3987e5" stroke-width="3" stroke-linecap="round"/>
+<text x="594" y="38" fill="#f0efec" font-size="13.5">With Livella</text>
+<line x1="700" y1="33" x2="726" y2="33" stroke="#d95926" stroke-width="3" stroke-linecap="round" stroke-dasharray="7 5"/>
+<text x="734" y="38" fill="#f0efec" font-size="13.5">macOS alone</text>
+<rect x="310.6" y="92" width="163.6" height="272.0" fill="#ffffff" fill-opacity="0.07"/>
+<text x="392.4" y="388.0" fill="#f0efec" font-size="13.5" text-anchor="middle">Other person speaks</text>
+<rect x="551.2" y="92" width="163.6" height="272.0" fill="#ffffff" fill-opacity="0.07"/>
+<text x="633.1" y="388.0" fill="#f0efec" font-size="13.5" text-anchor="middle">You speak</text>
+<line x1="70" y1="110" x2="840" y2="110" stroke="#383835" stroke-width="1"/>
+<text x="60" y="114.5" fill="#c3c2b7" font-size="13" text-anchor="end">0 dB</text>
+<line x1="70" y1="190" x2="840" y2="190" stroke="#383835" stroke-width="1"/>
+<text x="60" y="194.5" fill="#c3c2b7" font-size="13" text-anchor="end">−10 dB</text>
+<line x1="70" y1="270" x2="840" y2="270" stroke="#383835" stroke-width="1"/>
+<text x="60" y="274.5" fill="#c3c2b7" font-size="13" text-anchor="end">−20 dB</text>
+<line x1="70" y1="350" x2="840" y2="350" stroke="#383835" stroke-width="1"/>
+<text x="60" y="354.5" fill="#c3c2b7" font-size="13" text-anchor="end">−30 dB</text>
+<line x1="166.25" y1="92" x2="166.25" y2="364" stroke="#c3c2b7" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="166.25" y="388" fill="#f0efec" font-size="13.5" text-anchor="middle">Call starts</text>
+<line x1="777.4375" y1="92" x2="777.4375" y2="364" stroke="#c3c2b7" stroke-width="1" stroke-dasharray="3 4"/>
+<text x="777.4375" y="388" fill="#f0efec" font-size="13.5" text-anchor="middle">Clap, typing</text>
+<text x="777.4375" y="406" fill="#c3c2b7" font-size="12.5" text-anchor="middle">ignored</text>
+<path d="M70.0,110.0 L166.2,110.0 L171.1,350.0 L840.0,350.0" fill="none" stroke="#d95926" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<path d="M70.0,110.0 L166.2,110.0 L171.1,206.0 L310.6,206.0 L315.4,286.0 L474.2,286.0 L493.5,206.0 L551.2,206.0 L556.1,286.0 L714.9,286.0 L734.1,206.0 L840.0,206.0" fill="none" stroke="#1a1a19" stroke-width="6" stroke-linejoin="round"/>
+<path d="M70.0,110.0 L166.2,110.0 L171.1,206.0 L310.6,206.0 L315.4,286.0 L474.2,286.0 L493.5,206.0 L551.2,206.0 L556.1,286.0 L714.9,286.0 L734.1,206.0 L840.0,206.0" fill="none" stroke="#3987e5" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="118.125" y="100" fill="#c3c2b7" font-size="12.5" text-anchor="middle">No call</text>
+<text x="240.84375" y="196" fill="#f0efec" font-size="13" text-anchor="middle">With Livella −12 dB</text>
+<text x="392.4375" y="276" fill="#f0efec" font-size="13" text-anchor="middle">−22 dB</text>
+<text x="633.0625" y="276" fill="#f0efec" font-size="13" text-anchor="middle">−22 dB</text>
+<text x="240.84375" y="340" fill="#f0efec" font-size="13" text-anchor="middle">macOS alone −30 dB</text>
+</svg>

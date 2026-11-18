@@ -8,6 +8,9 @@ enum Probe {
         if arguments.contains("--probe-tap") { tapTest(); return true }
         if arguments.contains("--probe-vad") { vadTest(); return true }
         if arguments.contains("--probe-gate") { gateTest(); return true }
+        if let i = arguments.firstIndex(of: "--render-menu"), i + 1 < arguments.count {
+            renderMenu(to: arguments[i + 1]); return true
+        }
         return false
     }
 

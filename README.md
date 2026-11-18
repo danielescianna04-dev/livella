@@ -11,11 +11,19 @@ When a call app starts (WhatsApp, FaceTime, Zoom, …), macOS turns every other 
 - **lowers them only while someone speaks**: the other person, or you;
 - **tells your voice from noise**: key clicks, claps, rubbing, steady background noise and other people talking further away do not trigger it.
 
+<p align="center">
+  <img src="docs/menu.png" width="364" alt="Livella's menu during a WhatsApp call. Status: the other person is speaking, the rest is lowered; macOS lowers video and music by 30 dB, 18 dB recovered. Below: a slider for the volume of video and music during calls, a slider for how much to lower while someone speaks, and a checkbox to also lower when I speak.">
+</p>
+
 The interface is in Italian.
+
+![Chart of the volume of video and music during a call. Without a call it is 0 dB. With macOS alone it stays at −30 dB for the whole call. With Livella it stays at −12 dB and drops to −22 dB only while the other person or you speak; a clap or typing is ignored.](docs/volume.svg)
 
 > **Status: prototype.** Built and tested in one evening on one Mac (macOS 27, Apple silicon) with AirPods and WhatsApp. Other call apps and other headphones are untested. Expect rough edges.
 
 ## How it works
+
+![Diagram. Audio from video and music apps is captured, muted at the source, and played to the headphones by Livella with a new gain. The call app plays straight to the headphones, untouched. A speech detector measures only the level of the call audio and of your microphone, records nothing, and tells Livella when someone is speaking.](docs/how-it-works.svg)
 
 - A **Core Audio process tap** (macOS 14.2+) captures every app except the call, muted at the source, and Livella plays that audio back itself with its own gain. No driver, no kernel extension.
 - A second, unmuted tap on the call app only *measures* when the other person speaks. The call's own audio is never touched, so the call app's echo cancellation keeps working.

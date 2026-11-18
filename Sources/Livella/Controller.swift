@@ -54,7 +54,19 @@ final class Controller: ObservableObject {
     @Published private(set) var lastError: String?
     @Published private(set) var lastMicSwitch: String?
 
-    var isEngaged: Bool { engine.isRunning }
+    var isEngaged: Bool { engine.isRunning || previewEngaged }
+    private var previewEngaged = false
+
+    /// Example status for `--render-menu` (the README screenshot). The running
+    /// app never calls this.
+    func loadPreviewState() {
+        previewEngaged = true
+        permission = .granted
+        callName = "WhatsApp"
+        measuredDuckDB = 30
+        digitalMakeupDB = 18
+        speaker = .them
+    }
 
     // MARK: Parts
 
@@ -303,7 +315,10 @@ final class Controller: ObservableObject {
         // While you speak, take video/music back down by everything Livella
         // added (plus a margin), i.e. to where macOS itself would keep them.
         let added = mediaGainDB + digitalMakeupDB + hardwareRaiseDB
-        engine.ownDuckDB.value = Float(min(45, max(duckDepthDB, added + 3)))
+        // Same depth as for the other person, as the slider says. (A deeper cut
+        // was tried against choppy voice; the cause was the microphone.)
+        _ = added
+        engine.ownDuckDB.value = Float(duckDepthDB)
 
         if Date().timeIntervalSince(lastDiagnostics) >= 2 {
             lastDiagnostics = Date()
