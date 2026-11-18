@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>local.livella</string>
+    <key>CFBundleName</key>
+    <string>Livella</string>
+    <key>CFBundleDisplayName</key>
+    <string>Livella</string>
+    <key>CFBundleExecutable</key>
+    <string>Livella</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>0.1</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>it</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>15.0</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Durante le chiamate Livella misura solo il volume del microfono per capire quando stai parlando e abbassare video e musica. L'audio non viene registrato né inviato.</string>
+    <key>NSAudioCaptureUsageDescription</key>
+    <string>Livella prende l'audio delle app durante le chiamate per bilanciarlo: riporta su il volume che macOS abbassa e abbassa video e musica solo mentre l'altra persona parla. L'audio non viene registrato né inviato.</string>
+</dict>
+</plist>
